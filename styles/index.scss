@@ -1,0 +1,19 @@
+.ad-page {
+    display: flex;
+    flex-direction: column;
+    gap: 79px;
+    padding-bottom: 40px;
+
+    &__divided {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__left {
+        flex: 0 0 calc(43% - 40px);
+    }
+
+    &__right {
+        flex: 0 0 57%;
+    }
+}

@@ -1,0 +1,16 @@
+.ad-page {
+  display: flex;
+  flex-direction: column;
+  gap: 79px;
+  padding-bottom: 40px;
+}
+.ad-page__divided {
+  display: flex;
+  gap: 40px;
+}
+.ad-page__left {
+  flex: 0 0 calc(43% - 40px);
+}
+.ad-page__right {
+  flex: 0 0 57%;
+}/*# sourceMappingURL=index.css.map */

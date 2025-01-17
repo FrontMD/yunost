@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 79px;
     padding-bottom: 40px;
+    margin-top: 40px;
 
     &__divided {
         display: flex;
@@ -15,5 +16,194 @@
 
     &__right {
         flex: 0 0 57%;
+        max-width: 57%;
+    }
+
+    &__subtitle {
+        margin-bottom: 40px;
+        font-family: 'Navigo Medium';
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.125em;
+    }
+
+    &__text {
+        font-family: 'GraphikLC';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.3em;
+        letter-spacing: 0.052em;
+    }
+}
+
+.ad-page-intro {
+    &__cards {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &__card {
+        flex: 0 0 auto;
+    }
+}
+
+.ad-page-card {
+    width: 290px;
+    padding: 16px;
+    border: 8px solid #000000;
+
+    &__num {
+        margin-top: 7px;
+        width: fit-content;
+        font-family: 'Navigo Medium';
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 0.77em;
+    }
+
+    &__period {
+        margin-top: 9px;
+        font-family: 'Navigo Medium';
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1.26em;
+        letter-spacing: 0.056em;
+    }
+
+    &__desc {
+        margin-top: 16px;
+        font-family: 'Navigo';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.77em;
+        letter-spacing: 0.077em;
+    }
+}
+
+.ad-tabs {
+    width: 100%;
+    overflow: hidden;
+
+    .tabs {
+
+        /*@media (max-width: 767px) {
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }*/
+
+        &__tab {
+            min-height: 40px;
+            max-width: fit-content;
+            display: flex;
+            padding: 12px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: transparent;
+            transition: all 0.3s linear;
+
+            &.swiper-slide-thumb-active {
+                background-color: #000;
+
+                .tabs__name {
+                    color: #fff;
+                }
+            }
+
+        }
+
+        &__name {
+            position: relative;
+            bottom: -2px;
+            font-family: 'Navigo Medium';
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1em;
+            letter-spacing: 0.056em;
+            text-transform: uppercase;
+            color: #000;
+            transition: color 0.3s linear;
+            white-space: nowrap;
+        }
+    }
+
+    &__slides {
+        margin-top: 40px;
+    }
+
+    .slides {
+        &__slide {
+            background: white;
+
+            &:not(.swiper-slide-active) {
+                opacity: 0 !important;
+                z-index: -10;
+            }
+        }
+    }
+}
+
+.ad-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+
+    &__row {
+        display: grid;
+        grid-template-columns: 160px auto;
+    }
+
+    &__name,
+    &__value {
+        background-color: #E5E5E5;
+        font-family: 'Navigo';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.33em;
+        letter-spacing: 0.056em;
+    }
+
+    &__name {
+        padding: 8px;
+        position: relative;
+
+        span {
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    &__value {
+        position: relative;
+        text-align: right;
+        white-space: nowrap;
+        transition: width 0.3s linear;
+
+        span {
+            position: absolute;
+            right: 8px;
+            top: calc(50% + 3px);
+            transform: translateY(-50%);
+        }
+    }
+
+    &__source {
+        margin-top: 8px;
+        font-family: 'Navigo';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.77em;
+        letter-spacing: 0.077em;
+    }
+}
+
+.cooperation-form {
+    &__field {
+        position: relative;
     }
 }

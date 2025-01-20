@@ -187,3 +187,8 @@ img {
     transition: border-color 0.3s;
     cursor: pointer;
 }
+
+.submit-btn:hover,
+.submit-btn:focus {
+    border-color: #000;
+}

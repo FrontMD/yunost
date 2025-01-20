@@ -30,6 +30,18 @@
   line-height: 1.3em;
   letter-spacing: 0.052em;
 }
+.ad-page__text--bold {
+  font-family: "Navigo";
+  font-size: 21px;
+  line-height: 1.14em;
+  letter-spacing: 0.056em;
+}
+.ad-page__text a {
+  text-decoration: underline;
+}
+.ad-page__text p + p {
+  margin-top: 0.857em;
+}
 
 .ad-page-intro__cards {
   display: flex;
@@ -135,6 +147,7 @@
 .ad-stat__row {
   display: grid;
   grid-template-columns: 160px auto;
+  min-height: 40px;
 }
 .ad-stat__name, .ad-stat__value {
   background-color: #E5E5E5;
@@ -144,25 +157,28 @@
   line-height: 1.33em;
   letter-spacing: 0.056em;
 }
+.ad-stat__name span, .ad-stat__value span {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: calc(50% + 3px);
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
 .ad-stat__name {
-  padding: 8px;
   position: relative;
 }
 .ad-stat__name span {
-  position: relative;
-  top: 3px;
+  left: 8px;
 }
 .ad-stat__value {
   position: relative;
   text-align: right;
-  white-space: nowrap;
   transition: width 0.3s linear;
 }
 .ad-stat__value span {
-  position: absolute;
   right: 8px;
-  top: calc(50% + 3px);
-  transform: translateY(-50%);
 }
 .ad-stat__source {
   margin-top: 8px;
@@ -173,6 +189,74 @@
   letter-spacing: 0.077em;
 }
 
+.ad-page-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.ad-page-slider__slide {
+  aspect-ratio: 1/0.53;
+}
+.ad-page-slider__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ad-page-slider__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 100%;
+  padding-top: 2px;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+.ad-page-slider__control:hover {
+  background-color: #000;
+  color: #fff;
+}
+.ad-page-slider__control--prev {
+  left: 24px;
+  padding-right: 2px;
+}
+.ad-page-slider__control--next {
+  right: 24px;
+  padding-left: 2px;
+}
+
+.cooperation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
 .cooperation-form__field {
   position: relative;
+}
+.cooperation-form__input {
+  padding-top: 0;
+  outline: none;
+}
+.cooperation-form__policy {
+  margin-top: 16px;
+  font-family: "Navigo";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+.cooperation-form__policy a {
+  text-decoration: underline;
+}
+.cooperation-form .error {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

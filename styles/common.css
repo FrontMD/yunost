@@ -53,6 +53,13 @@
     margin-top: 1em;
 }
 
+@media (max-width: 767px) {
+    .page-title {
+        font-size: 26px;
+        margin-top: 0.7em;
+    }
+}
+
 *,
 *:before,
 *:after {

@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Реклама в журнале Юность</title>
-    <link rel="stylesheet" href="styles/common.css"> <!--Стили с сайта -->
+    <link rel="stylesheet" href="styles/common.css"> <!--Эти стили уже есть на сайте, не переносить -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Эта библиотека уже есть на сайте -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Эта библиотека уже есть на сайте -->
 </head>
 
 <body>
@@ -281,26 +284,29 @@
                                 </div>
                             </div>
                             <div class="ad-page__right">
-                                <form class="cooperation-form">
-                                    <div class="cooperation-form__field">
-                                        <input type="text" class="form-input cooperation-form__input"
-                                            placeholder="Ваше имя" required="" value="">
-                                        <span class="error">Поле обязательно для заполнения</span>
+                                <form class="cooperation-form" data-validate novalidate>
+                                    <div class="cooperation-form__field" data-js="formField">
+                                        <input type="text" name="name" class="form-input cooperation-form__input"
+                                            placeholder="Ваше имя" data-type="letters" required="" value="">
+                                        <span class="error" data-js='fieldError'>Поле обязательно для заполнения</span>
                                     </div>
-                                    <div class="cooperation-form__field">
-                                        <input type="email" class="form-input cooperation-form__input"
-                                            placeholder="Электронный адрес" required="" value="">
-                                        <span class="error">Поле обязательно для заполнения</span>
+                                    <div class="cooperation-form__field" data-js="formField">
+                                        <input type="email" name="email" class="form-input cooperation-form__input"
+                                            placeholder="Электронный адрес" data-type="email" data-v-name="email"
+                                            required="" value="">
+                                        <span class="error" data-js='fieldError'>Поле обязательно для заполнения</span>
                                     </div>
-                                    <div class="cooperation-form__field">
-                                        <input type="tel" class="form-input cooperation-form__input"
-                                            placeholder="Телефон" required="" value="">
-                                        <span class="error">Поле обязательно для заполнения</span>
+                                    <div class="cooperation-form__field" data-js="formField">
+                                        <input type="tel" name="phone_number" class="form-input cooperation-form__input"
+                                            placeholder="Телефон" data-type="phoneNumber" data-v-name="phone"
+                                            required="" value="">
+                                        <span class="error" data-js='fieldError'>Поле обязательно для заполнения</span>
                                     </div>
-                                    <div class="cooperation-form__field">
-                                        <textarea class="form-input cooperation-form__input" rows="2"
-                                            placeholder="Расскажите коротко о вашем продукте" required=""></textarea>
-                                        <span class="error">Поле обязательно для заполнения</span>
+                                    <div class="cooperation-form__field" data-js="formField">
+                                        <textarea class="form-input cooperation-form__input" name="about_product"
+                                            rows="2" placeholder="Расскажите коротко о вашем продукте"
+                                            required=""></textarea>
+                                        <span class="error" data-js='fieldError'>Поле обязательно для заполнения</span>
                                     </div>
                                     <div class="cooperation-form__footer">
                                         <input type="submit" class="submit-btn" name="submit" value="Отправить">
@@ -320,6 +326,8 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Эта библиотека уже есть на сайте -->
+    <script src="scripts/inputmask.min.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 

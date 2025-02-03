@@ -1,4 +1,4 @@
-.ad-page {
+.sales-page {
     display: flex;
     flex-direction: column;
     gap: 79px;
@@ -116,7 +116,7 @@
     }
 }
 
-.ad-page-intro {
+.sales-page-intro {
     &__cards {
         display: flex;
         align-items: stretch;
@@ -137,7 +137,7 @@
     }
 }
 
-.ad-page-card {
+.sales-page-card {
     width: 290px;
     padding: 16px;
     border: 8px solid #000000;
@@ -223,7 +223,7 @@
     }
 }
 
-.ad-tabs {
+.sales-tabs {
     width: 100%;
     overflow: hidden;
 
@@ -303,7 +303,7 @@
     }
 }
 
-.ad-stat {
+.sales-stat {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -405,7 +405,7 @@
     }
 }
 
-.ad-page-slider {
+.sales-page-slider {
     position: relative;
     overflow: hidden;
     width: 100%;

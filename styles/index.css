@@ -1,4 +1,4 @@
-.ad-page {
+.sales-page {
   display: flex;
   flex-direction: column;
   gap: 79px;
@@ -6,60 +6,60 @@
   margin-top: 40px;
 }
 @media (max-width: 1150px) {
-  .ad-page {
+  .sales-page {
     gap: 50px;
   }
 }
 @media (max-width: 767px) {
-  .ad-page {
+  .sales-page {
     margin-top: 20px;
     gap: 40px;
   }
 }
-.ad-page__divided {
+.sales-page__divided {
   display: flex;
   gap: 40px;
 }
 @media (max-width: 1150px) {
-  .ad-page__divided {
+  .sales-page__divided {
     gap: 20px;
   }
 }
 @media (max-width: 1023px) {
-  .ad-page__divided {
+  .sales-page__divided {
     flex-direction: column;
     gap: 30px;
   }
 }
 @media (max-width: 767px) {
-  .ad-page__divided {
+  .sales-page__divided {
     gap: 20px;
   }
 }
-.ad-page__left {
+.sales-page__left {
   flex: 0 0 calc(43% - 40px);
 }
 @media (max-width: 1150px) {
-  .ad-page__left {
+  .sales-page__left {
     flex: 0 0 calc(43% - 20px);
   }
 }
 @media (max-width: 1023px) {
-  .ad-page__left {
+  .sales-page__left {
     flex-basis: auto;
   }
 }
-.ad-page__right {
+.sales-page__right {
   flex: 0 0 57%;
   max-width: 57%;
 }
 @media (max-width: 1023px) {
-  .ad-page__right {
+  .sales-page__right {
     flex-basis: auto;
     max-width: 100%;
   }
 }
-.ad-page__subtitle {
+.sales-page__subtitle {
   margin-bottom: 40px;
   font-family: "Navigo Medium";
   font-size: 32px;
@@ -67,23 +67,23 @@
   line-height: 1.125em;
 }
 @media (max-width: 1150px) {
-  .ad-page__subtitle {
+  .sales-page__subtitle {
     font-size: 28px;
     margin-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
-  .ad-page__subtitle {
+  .sales-page__subtitle {
     margin-bottom: 16px;
   }
 }
 @media (max-width: 479px) {
-  .ad-page__subtitle {
+  .sales-page__subtitle {
     font-size: 25px;
     margin-bottom: 8px;
   }
 }
-.ad-page__text {
+.sales-page__text {
   font-family: "GraphikLC";
   font-size: 20px;
   font-weight: 400;
@@ -91,88 +91,88 @@
   letter-spacing: 0.052em;
 }
 @media (max-width: 1150px) {
-  .ad-page__text {
+  .sales-page__text {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .ad-page__text {
+  .sales-page__text {
     font-size: 16px;
   }
 }
-.ad-page__text--bold {
+.sales-page__text--bold {
   font-family: "Navigo";
   font-size: 21px;
   line-height: 1.14em;
   letter-spacing: 0.056em;
 }
 @media (max-width: 1150px) {
-  .ad-page__text--bold {
+  .sales-page__text--bold {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .ad-page__text--bold {
+  .sales-page__text--bold {
     font-size: 16px;
   }
 }
-.ad-page__text a {
+.sales-page__text a {
   text-decoration: underline;
 }
-.ad-page__text p + p {
+.sales-page__text p + p {
   margin-top: 0.857em;
 }
 
-.ad-page-intro__cards {
+.sales-page-intro__cards {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   gap: 24px;
 }
 @media (max-width: 1150px) {
-  .ad-page-intro__cards {
+  .sales-page-intro__cards {
     gap: 16px;
   }
 }
 @media (max-width: 1023px) {
-  .ad-page-intro__cards {
+  .sales-page-intro__cards {
     gap: 8px;
   }
 }
-.ad-page-intro__card {
+.sales-page-intro__card {
   flex: 0 0 auto;
 }
 
-.ad-page-card {
+.sales-page-card {
   width: 290px;
   padding: 16px;
   border: 8px solid #000000;
 }
 @media (max-width: 1150px) {
-  .ad-page-card {
+  .sales-page-card {
     width: 260px;
     padding: 12px;
     border-width: 6px;
   }
 }
 @media (max-width: 1023px) {
-  .ad-page-card {
+  .sales-page-card {
     min-width: calc((100% - 8px) / 2);
   }
 }
 @media (max-width: 767px) {
-  .ad-page-card {
+  .sales-page-card {
     width: 220px;
     padding: 8px;
   }
 }
 @media (max-width: 479px) {
-  .ad-page-card {
+  .sales-page-card {
     border-width: 2px;
     width: 150px;
   }
 }
-.ad-page-card__num {
+.sales-page-card__num {
   margin-top: 7px;
   width: -moz-fit-content;
   width: fit-content;
@@ -182,23 +182,23 @@
   line-height: 0.77em;
 }
 @media (max-width: 1150px) {
-  .ad-page-card__num {
+  .sales-page-card__num {
     font-size: 42px;
   }
 }
 @media (max-width: 767px) {
-  .ad-page-card__num {
+  .sales-page-card__num {
     font-size: 32px;
   }
 }
 @media (max-width: 479px) {
-  .ad-page-card__num {
+  .sales-page-card__num {
     border-width: 4px;
     font-size: 24px;
     margin-top: 3px;
   }
 }
-.ad-page-card__period {
+.sales-page-card__period {
   margin-top: 9px;
   font-family: "Navigo Medium";
   font-size: 19px;
@@ -207,17 +207,17 @@
   letter-spacing: 0.056em;
 }
 @media (max-width: 1150px) {
-  .ad-page-card__period {
+  .sales-page-card__period {
     font-size: 17px;
   }
 }
 @media (max-width: 479px) {
-  .ad-page-card__period {
+  .sales-page-card__period {
     font-size: 14px;
     margin-top: 4px;
   }
 }
-.ad-page-card__desc {
+.sales-page-card__desc {
   margin-top: 16px;
   font-family: "Navigo";
   font-size: 13px;
@@ -226,23 +226,23 @@
   letter-spacing: 0.077em;
 }
 @media (max-width: 1150px) {
-  .ad-page-card__desc {
+  .sales-page-card__desc {
     margin-top: 12px;
     font-size: 12px;
     line-height: 1.4em;
   }
 }
 @media (max-width: 479px) {
-  .ad-page-card__desc {
+  .sales-page-card__desc {
     margin-top: 8px;
   }
 }
 
-.ad-tabs {
+.sales-tabs {
   width: 100%;
   overflow: hidden;
 }
-.ad-tabs .tabs__tab {
+.sales-tabs .tabs__tab {
   min-height: 40px;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -255,24 +255,24 @@
   transition: all 0.3s linear;
 }
 @media (max-width: 1150px) {
-  .ad-tabs .tabs__tab {
+  .sales-tabs .tabs__tab {
     padding: 10px;
     min-height: 36px;
   }
 }
 @media (max-width: 767px) {
-  .ad-tabs .tabs__tab {
+  .sales-tabs .tabs__tab {
     padding: 8px;
     min-height: 26px;
   }
 }
-.ad-tabs .tabs__tab.swiper-slide-thumb-active {
+.sales-tabs .tabs__tab.swiper-slide-thumb-active {
   background-color: #000;
 }
-.ad-tabs .tabs__tab.swiper-slide-thumb-active .tabs__name {
+.sales-tabs .tabs__tab.swiper-slide-thumb-active .tabs__name {
   color: #fff;
 }
-.ad-tabs .tabs__name {
+.sales-tabs .tabs__name {
   position: relative;
   bottom: -2px;
   font-family: "Navigo Medium";
@@ -286,65 +286,65 @@
   white-space: nowrap;
 }
 @media (max-width: 1150px) {
-  .ad-tabs .tabs__name {
+  .sales-tabs .tabs__name {
     font-size: 12px;
   }
 }
 @media (max-width: 767px) {
-  .ad-tabs .tabs__name {
+  .sales-tabs .tabs__name {
     font-size: 10px;
   }
 }
-.ad-tabs__slides {
+.sales-tabs__slides {
   margin-top: 40px;
 }
 @media (max-width: 1150px) {
-  .ad-tabs__slides {
+  .sales-tabs__slides {
     margin-top: 30px;
   }
 }
-.ad-tabs .slides__slide {
+.sales-tabs .slides__slide {
   background: white;
 }
-.ad-tabs .slides__slide:not(.swiper-slide-active) {
+.sales-tabs .slides__slide:not(.swiper-slide-active) {
   opacity: 0 !important;
   z-index: -10;
 }
 
-.ad-stat {
+.sales-stat {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 8px;
 }
 @media (max-width: 479px) {
-  .ad-stat {
+  .sales-stat {
     gap: 4px;
   }
 }
-.ad-stat__row {
+.sales-stat__row {
   display: grid;
   grid-template-columns: 160px auto;
   min-height: 40px;
 }
 @media (max-width: 1150px) {
-  .ad-stat__row {
+  .sales-stat__row {
     grid-template-columns: 145px auto;
   }
 }
 @media (max-width: 767px) {
-  .ad-stat__row {
+  .sales-stat__row {
     grid-template-columns: 120px auto;
     min-height: 35px;
   }
 }
 @media (max-width: 479px) {
-  .ad-stat__row {
+  .sales-stat__row {
     grid-template-columns: 105px auto;
     min-height: 32px;
   }
 }
-.ad-stat__name, .ad-stat__value {
+.sales-stat__name, .sales-stat__value {
   background-color: #E5E5E5;
   font-family: "Navigo";
   font-size: 18px;
@@ -353,21 +353,21 @@
   letter-spacing: 0.056em;
 }
 @media (max-width: 1150px) {
-  .ad-stat__name, .ad-stat__value {
+  .sales-stat__name, .sales-stat__value {
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  .ad-stat__name, .ad-stat__value {
+  .sales-stat__name, .sales-stat__value {
     font-size: 13px;
   }
 }
 @media (max-width: 479px) {
-  .ad-stat__name, .ad-stat__value {
+  .sales-stat__name, .sales-stat__value {
     font-size: 11px;
   }
 }
-.ad-stat__name span, .ad-stat__value span {
+.sales-stat__name span, .sales-stat__value span {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
@@ -377,25 +377,25 @@
   white-space: nowrap;
 }
 @media (max-width: 767px) {
-  .ad-stat__name span, .ad-stat__value span {
+  .sales-stat__name span, .sales-stat__value span {
     top: calc(50% + 1px);
   }
 }
-.ad-stat__name {
+.sales-stat__name {
   position: relative;
 }
-.ad-stat__name span {
+.sales-stat__name span {
   left: 8px;
 }
-.ad-stat__value {
+.sales-stat__value {
   position: relative;
   text-align: right;
   transition: width 0.3s linear;
 }
-.ad-stat__value span {
+.sales-stat__value span {
   right: 8px;
 }
-.ad-stat__source {
+.sales-stat__source {
   margin-top: 8px;
   font-family: "Navigo";
   font-size: 13px;
@@ -404,32 +404,32 @@
   letter-spacing: 0.077em;
 }
 @media (max-width: 1150px) {
-  .ad-stat__source {
+  .sales-stat__source {
     font-size: 12px;
   }
 }
 @media (max-width: 479px) {
-  .ad-stat__source {
+  .sales-stat__source {
     font-size: 10px;
   }
 }
 
-.ad-page-slider {
+.sales-page-slider {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
-.ad-page-slider__slide {
+.sales-page-slider__slide {
   aspect-ratio: 1/0.53;
 }
-.ad-page-slider__slide img {
+.sales-page-slider__slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.ad-page-slider__control {
+.sales-page-slider__control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -448,41 +448,41 @@
   transition: all 0.2s linear;
 }
 @media (max-width: 479px) {
-  .ad-page-slider__control {
+  .sales-page-slider__control {
     width: 32px;
     height: 32px;
     padding-top: 0;
   }
 }
-.ad-page-slider__control:hover {
+.sales-page-slider__control:hover {
   background-color: #000;
   color: #fff;
 }
-.ad-page-slider__control svg {
+.sales-page-slider__control svg {
   width: 10px;
   height: 19px;
 }
 @media (max-width: 479px) {
-  .ad-page-slider__control svg {
+  .sales-page-slider__control svg {
     width: 7px;
     height: 12px;
   }
 }
-.ad-page-slider__control--prev {
+.sales-page-slider__control--prev {
   left: 24px;
   padding-right: 2px;
 }
 @media (max-width: 479px) {
-  .ad-page-slider__control--prev {
+  .sales-page-slider__control--prev {
     left: 8px;
   }
 }
-.ad-page-slider__control--next {
+.sales-page-slider__control--next {
   right: 24px;
   padding-left: 2px;
 }
 @media (max-width: 479px) {
-  .ad-page-slider__control--next {
+  .sales-page-slider__control--next {
     right: 8px;
   }
 }

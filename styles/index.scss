@@ -317,6 +317,9 @@
         display: grid;
         grid-template-columns: 160px auto;
         min-height: 40px;
+        max-width: 0;
+        overflow: hidden;
+        transition: max-width 0.7s linear;
 
         @media(max-width: 1150px) {
             grid-template-columns: 145px auto;

@@ -10,15 +10,10 @@ function adStatsInit() {
 
     if(adStats.length < 1) return
 
-    const ww = window.innerWidth
     let paddings = 8+8
     let gap = 10
 
-    if(ww < 768) {
-        
-    }
-
-    adStats.forEach(adStat => {
+    adStats.forEach((adStat, index) => {
         const adStatRows = adStat.querySelectorAll('[data-js="adStatRow"]')
         let baseWidth = 160
         let maxWidth = 160
@@ -39,6 +34,34 @@ function adStatsInit() {
             adStatRows.forEach(adStatRow => {
                 adStatRow.style.gridTemplateColumns = `${maxWidth}px auto`
             })
+        }
+
+        if(index == 0) {
+
+            let onStart = false;
+
+            checkStatPosition()
+
+            if(!onStart) {
+                window.addEventListener('scroll', checkStatPosition)
+            }
+            
+            function checkStatPosition() {
+                let vh = window.innerHeight
+                let top = adStat.getBoundingClientRect().top
+                let height = adStat.getBoundingClientRect().top
+
+                console.log(top)
+
+                if(vh > top + height * 0.5) {
+                    adStatRows.forEach(row => {
+                        row.style.maxWidth = '100%'
+                    })
+                    onStart = true;
+                    window.removeEventListener('scroll', checkStatPosition)
+                }
+
+            }
         }
     })
 }
@@ -71,6 +94,18 @@ function tabsBlockInit() {
             thumbs: {
                 swiper: tabsSliderEx
             },
+            on: {
+                slideChangeTransitionEnd: function(slider) {
+                    let currentSlide = slider.slides[slider.realIndex]
+                    let currentRows = currentSlide.querySelectorAll('[data-js="adStatRow"]')
+
+                    if(currentRows.length > 0) {
+                        currentRows.forEach(row => {
+                            row.style.maxWidth = '100%'
+                        })
+                    }
+                }
+            }
         })
     })
 }
